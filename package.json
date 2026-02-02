@@ -1,0 +1,17 @@
+{
+  "name": "aaa-yoga-app",
+  "version": "1.0.0",
+  "description": "The Amazing Alternative to Awesome - Mindful language for yoga teachers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["yoga", "teaching", "mindful", "language"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "openai": "^6.17.0"
+  }
+}

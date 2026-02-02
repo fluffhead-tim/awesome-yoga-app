@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAA - The Amazing Alternative to Awesome</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Decorative elements -->
+    <div class="lotus-decoration top-left"></div>
+    <div class="lotus-decoration bottom-right"></div>
+    
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">🧘</span>
+        <div class="logo-text">
+          <h1>AAA</h1>
+          <p class="tagline">The Amazing Alternative to Awesome</p>
+        </div>
+      </div>
+      <p class="subtitle">Mindful language for yoga teachers</p>
+    </header>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <!-- Random Word Section -->
+      <section class="card random-section">
+        <h2>Quick Inspiration</h2>
+        <p class="section-description">Need a quick alternative? Let the universe guide you.</p>
+        
+        <button id="randomBtn" class="btn btn-primary">
+          <span class="btn-icon">✨</span>
+          Random Awesomeness
+        </button>
+        
+        <div id="randomResult" class="result-box hidden">
+          <p class="result-label">Try saying:</p>
+          <p id="randomWord" class="result-word"></p>
+        </div>
+      </section>
+
+      <!-- Contextual Cue Section -->
+      <section class="card cue-section">
+        <h2>Contextual Cues</h2>
+        <p class="section-description">Enter a phrase you'd normally say, and receive an instructive alternative with specific yoga cues.</p>
+        
+        <div class="input-group">
+          <label for="phraseInput" class="input-label">Your phrase:</label>
+          <input 
+            type="text" 
+            id="phraseInput" 
+            class="text-input" 
+            placeholder="e.g., Awesome Warrior II!"
+            maxlength="200"
+          >
+          <p class="input-hint">Include a pose name (English or Sanskrit) for pose-specific cues</p>
+        </div>
+        
+        <button id="generateBtn" class="btn btn-secondary">
+          <span class="btn-icon">🌟</span>
+          Generate Mindful Cue
+        </button>
+        
+        <div id="cueResult" class="result-box hidden">
+          <p class="result-label">Instead, try:</p>
+          <p id="generatedCue" class="result-cue"></p>
+        </div>
+        
+        <div id="loading" class="loading hidden">
+          <div class="spinner"></div>
+          <p>Finding the perfect words...</p>
+        </div>
+      </section>
+
+      <!-- Tips Section -->
+      <section class="card tips-section">
+        <h2>Remember</h2>
+        <div class="tip-content">
+          <p>🙏 Mindful feedback helps students understand <em>what</em> they're doing well</p>
+          <p>🧘 Specific cues keep students safe and engaged</p>
+          <p>💫 Your words guide their practice journey</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Made with 💙 for yoga teacher training</p>
+      <p class="footer-note">Words matter. Choose them mindfully.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
